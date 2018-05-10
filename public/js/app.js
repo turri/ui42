@@ -9,7 +9,9 @@ $(document).ready(function() {
 	        	let aCities = [];
 	        	data.forEach(function(item){
 	        		aCities.push(item.city);
-	        	})
+	        	});
+
+	        	console.log(aCities);
 	            return process(aCities);
 	        });
 	    }

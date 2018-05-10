@@ -19,6 +19,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('cities/{name}', function($name) {
-	// echo City::where('city', 'like', '%{$name}%');
     return City::select('city')->where('city', 'like', '%'.$name.'%')->get();
 });
